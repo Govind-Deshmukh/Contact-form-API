@@ -31,7 +31,7 @@ def contact(user):
             msg = request.form['message']
 
             message["Subject"] = "Contact form submission on " + request.referrer
-            message["From"] = "deshmukhgovind@coderceo.com"
+            message["From"] = "youremailaddress"
             message["To"] = user
 
             data = "<div class='container'> <div class='row'> <div class='col'> <p><b>Name </b>:" + name + " </p> </div> <div class='col'> <p><b>Email</b> : " + email + " </p> </div> <div class='col'> <p><b>Subject</b> : " + request.form['subject'] + "</p> </div> <div class='col'> <p><b>Message</b> : " + request.form['message']+"</p> </div> </div> </div> </div>"
